@@ -25,6 +25,7 @@
   "homepage": "https://github.com/visva-dev/RestaurantPage#readme",
   "devDependencies": {
     "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",

@@ -1,4 +1,8 @@
-/* Some CSS Setup - nothing to do with flexbox */
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -56,6 +60,57 @@ a:hover {
 
 .flex-nav .social {
   flex: 1;
+}
+
+.top {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'hero hero cta1'
+    'hero hero cta2';
+}
+
+.hero {
+  grid-area: hero;
+  min-height: 400px;
+  background: white url(./taco.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.hero > * {
+  background: var(--yellow);
+  padding: 5px;
+}
+
+.cta {
+  background: var(--yellow);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.cta p {
+  margin: 0;
+}
+
+.cta1 {
+  grid-area: cta1;
+}
+
+.cta2 {
+  grid-area: cta2;
+}
+
+.price {
+  font-size: 60px;
+  font-weight: 300;
 }
 
 @media all and (max-width: 1000px) {
