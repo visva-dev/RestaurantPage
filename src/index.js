@@ -1,8 +1,10 @@
 import './style.scss';
 import nav from './modules/navbar';
-import contacts from './modules/contact';
 import home from './modules/home';
+import menu from './modules/menu';
+import contacts from './modules/contact';
 
 nav();
-contacts();
 home();
+menu();
+contacts();
