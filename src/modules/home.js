@@ -1,6 +1,23 @@
 const home = () => {
   const top = document.createElement('div');
   const header = document.createElement('header');
+  const features = document.createElement('section');
+  const feature1 = document.createElement('div');
+  const feature1_span = document.createElement('span');
+  const feature1_h3 = document.createElement('h3');
+  const feature1_p = document.createElement('p');
+  const feature2 = document.createElement('div');
+  const feature2_span = document.createElement('span');
+  const feature2_h3 = document.createElement('h3');
+  const feature2_p = document.createElement('p');
+  const feature3 = document.createElement('div');
+  const feature3_span = document.createElement('span');
+  const feature3_h3 = document.createElement('h3');
+  const feature3_p = document.createElement('p');
+  const feature4 = document.createElement('div');
+  const feature4_span = document.createElement('span');
+  const feature4_h3 = document.createElement('h3');
+  const feature4_p = document.createElement('p');
   const div1 = document.createElement('div');
   const div2 = document.createElement('div');
   const h1 = document.createElement('h1');
@@ -10,12 +27,25 @@ const home = () => {
   const p4 = document.createElement('p');
   const p5 = document.createElement('p');
   const content = document.getElementById('content');
+
   h1.textContent = "Terry's Taco Joint";
   p1.textContent = "Pretty Good Tacos!";
   p2.textContent = '$1.99'
   p3.textContent = 'Tacos'
   p4.textContent = '$3.99'
   p5.textContent = 'Kombucha'
+  feature1_span.textContent = '🌮'
+  feature2_span.textContent = '🍺'
+  feature3_span.textContent = '🍷'
+  feature4_span.textContent = '🎵'
+  feature1_h3.textContent = 'Tacos'
+  feature2_h3.textContent = 'Beer'
+  feature3_h3.textContent = 'Wine'
+  feature4_h3.textContent = 'Music'
+  feature1_p.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  feature2_p.textContent = "adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  feature3_p.textContent = "adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisicing elit, elit."
+  feature4_p.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
 
   header.appendChild(h1);
   header.appendChild(p1);
@@ -27,8 +57,38 @@ const home = () => {
   top.appendChild(header);
   top.appendChild(div1);
   top.appendChild(div2);
+  content.appendChild(features);
+  features.appendChild(feature1);
+  features.appendChild(feature2);
+  features.appendChild(feature3);
+  features.appendChild(feature4);
+  feature1.appendChild(feature1_span)
+  feature1.appendChild(feature1_h3)
+  feature1.appendChild(feature1_p)
+
+  feature2.appendChild(feature2_span)
+  feature2.appendChild(feature2_h3)
+  feature2.appendChild(feature2_p)
+
+  feature3.appendChild(feature3_span)
+  feature3.appendChild(feature3_h3)
+  feature3.appendChild(feature3_p)
+
+  feature4.appendChild(feature4_span)
+  feature4.appendChild(feature4_h3)
+  feature4.appendChild(feature4_p)
+
   top.setAttribute('class', 'top');
   header.setAttribute('class', 'hero');
+  features.setAttribute('class', 'features');
+  feature1.setAttribute('class', 'feature');
+  feature2.setAttribute('class', 'feature');
+  feature3.setAttribute('class', 'feature');
+  feature4.setAttribute('class', 'feature');
+  feature1_span.setAttribute('class', 'icon');
+  feature2_span.setAttribute('class', 'icon');
+  feature3_span.setAttribute('class', 'icon');
+  feature4_span.setAttribute('class', 'icon');
   p2.setAttribute('class', 'price');
   p4.setAttribute('class', 'price');
   div1.setAttribute('class', 'cta cta1')
