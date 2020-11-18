@@ -220,6 +220,12 @@ footer {
   font-weight: 100;
 }
 
+.details {
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+
 @media all and (max-width: 1000px) {
   .flex-nav ul {
     flex-wrap: wrap;

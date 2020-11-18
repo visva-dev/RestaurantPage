@@ -4,6 +4,7 @@ const footer = () => {
   const content = document.getElementById('content');
 
   footer_p.textContent = 'Visvaldas Rapalis'
+  footer.setAttribute('id', 'footer');
 
   content.appendChild(footer);
   footer.appendChild(footer_p)

@@ -8,9 +8,12 @@ const nav = () => {
   const thirdList = document.createElement('li');
   const thirdAnchor = document.createElement('a');
   const content = document.getElementById('content');
+
   anchor.textContent = 'Home';
   secondAnchor.textContent = 'Menu';
   thirdAnchor.textContent = 'Contact';
+
+
   list.appendChild(anchor);
   secondList.appendChild(secondAnchor);
   thirdList.appendChild(thirdAnchor);
@@ -21,6 +24,7 @@ const nav = () => {
 
   content.appendChild(nav);
   nav.setAttribute('class', 'flex-nav');
+  thirdList.setAttribute('id', 'contact')
 }
 
 export default nav;

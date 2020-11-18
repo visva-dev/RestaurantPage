@@ -33,8 +33,8 @@ const home = () => {
   const p3 = document.createElement('p');
   const p4 = document.createElement('p');
   const p5 = document.createElement('p');
-  const gallery = document.createElement('section')
-  const gallery_h2 = document.createElement('h2')
+  const gallery = document.createElement('section');
+  const gallery_h2 = document.createElement('h2');
   const gallery_img_1 = document.createElement('img');
   const gallery_img_2 = document.createElement('img');
   const gallery_img_3 = document.createElement('img');
@@ -48,39 +48,44 @@ const home = () => {
   const content = document.getElementById('content');
 
   h1.textContent = "Terry's Taco Joint";
-  p1.textContent = "Pretty Good Tacos!";
-  p2.textContent = '$1.99'
-  p3.textContent = 'Tacos'
-  p4.textContent = '$3.99'
-  p5.textContent = 'Kombucha'
-  feature1_span.textContent = '🌮'
-  feature2_span.textContent = '🍺'
-  feature3_span.textContent = '🍷'
-  feature4_span.textContent = '🎵'
-  feature1_h3.textContent = 'Tacos'
-  feature2_h3.textContent = 'Beer'
-  feature3_h3.textContent = 'Wine'
-  feature4_h3.textContent = 'Music'
-  feature1_p.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
-  feature2_p.textContent = "adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
-  feature3_p.textContent = "adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisicing elit, elit."
-  feature4_p.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-  about_img.src = './queso-taco.png'
-  about_div_h2.textContent = "Featured Taco"
-  about_div_p1.textContent = "Slim Profile, easy to hold and loaded with cheese."
-  about_div_p2.textContent = "This is the one you have been waiting for"
-  about_div_button.textContent = "Learn More →"
-  gallery_h2.textContent = "Instant Grams"
-  gallery_img_1.src = "https://source.unsplash.com/random/201x201"
-  gallery_img_2.src = "https://source.unsplash.com/random/202x202"
-  gallery_img_3.src = "https://source.unsplash.com/random/203x203"
-  gallery_img_4.src = "https://source.unsplash.com/random/204x204"
-  gallery_img_5.src = "https://source.unsplash.com/random/205x205"
-  gallery_img_6.src = "https://source.unsplash.com/random/206x206"
-  gallery_img_7.src = "https://source.unsplash.com/random/207x207"
-  gallery_img_8.src = "https://source.unsplash.com/random/208x208"
-  gallery_img_9.src = "https://source.unsplash.com/random/209x209"
-  gallery_img_10.src = "https://source.unsplash.com/random/209x208"
+  p1.textContent = 'Pretty Good Tacos!';
+  p2.textContent = '$1.99';
+  p3.textContent = 'Tacos';
+  p4.textContent = '$3.99';
+  p5.textContent = 'Kombucha';
+  feature1_span.textContent = '🌮';
+  feature2_span.textContent = '🍺';
+  feature3_span.textContent = '🍷';
+  feature4_span.textContent = '🎵';
+  feature1_h3.textContent = 'Tacos';
+  feature2_h3.textContent = 'Beer';
+  feature3_h3.textContent = 'Wine';
+  feature4_h3.textContent = 'Music';
+  feature1_p.textContent =
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.';
+  feature2_p.textContent =
+    'adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.';
+  feature3_p.textContent =
+    'adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisicing elit, elit.';
+  feature4_p.textContent =
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
+  about_img.src = './queso-taco.png';
+  about_div_h2.textContent = 'Featured Taco';
+  about_div_p1.textContent =
+    'Slim Profile, easy to hold and loaded with cheese.';
+  about_div_p2.textContent = 'This is the one you have been waiting for';
+  about_div_button.textContent = 'Learn More →';
+  gallery_h2.textContent = 'Instant Grams';
+  gallery_img_1.src = 'https://source.unsplash.com/random/201x201';
+  gallery_img_2.src = 'https://source.unsplash.com/random/202x202';
+  gallery_img_3.src = 'https://source.unsplash.com/random/203x203';
+  gallery_img_4.src = 'https://source.unsplash.com/random/204x204';
+  gallery_img_5.src = 'https://source.unsplash.com/random/205x205';
+  gallery_img_6.src = 'https://source.unsplash.com/random/206x206';
+  gallery_img_7.src = 'https://source.unsplash.com/random/207x207';
+  gallery_img_8.src = 'https://source.unsplash.com/random/208x208';
+  gallery_img_9.src = 'https://source.unsplash.com/random/209x209';
+  gallery_img_10.src = 'https://source.unsplash.com/random/209x208';
 
   header.appendChild(h1);
   header.appendChild(p1);
@@ -97,41 +102,43 @@ const home = () => {
   features.appendChild(feature2);
   features.appendChild(feature3);
   features.appendChild(feature4);
-  feature1.appendChild(feature1_span)
-  feature1.appendChild(feature1_h3)
-  feature1.appendChild(feature1_p)
-  feature2.appendChild(feature2_span)
-  feature2.appendChild(feature2_h3)
-  feature2.appendChild(feature2_p)
-  feature3.appendChild(feature3_span)
-  feature3.appendChild(feature3_h3)
-  feature3.appendChild(feature3_p)
-  feature4.appendChild(feature4_span)
-  feature4.appendChild(feature4_h3)
-  feature4.appendChild(feature4_p)
+  feature1.appendChild(feature1_span);
+  feature1.appendChild(feature1_h3);
+  feature1.appendChild(feature1_p);
+  feature2.appendChild(feature2_span);
+  feature2.appendChild(feature2_h3);
+  feature2.appendChild(feature2_p);
+  feature3.appendChild(feature3_span);
+  feature3.appendChild(feature3_h3);
+  feature3.appendChild(feature3_p);
+  feature4.appendChild(feature4_span);
+  feature4.appendChild(feature4_h3);
+  feature4.appendChild(feature4_p);
   content.appendChild(about);
-  about.appendChild(about_img)
-  about.appendChild(about_div)
-  about_div.appendChild(about_div_h2)
-  about_div.appendChild(about_div_p1)
-  about_div.appendChild(about_div_p2)
-  about_div.appendChild(about_div_button)
+  about.appendChild(about_img);
+  about.appendChild(about_div);
+  about_div.appendChild(about_div_h2);
+  about_div.appendChild(about_div_p1);
+  about_div.appendChild(about_div_p2);
+  about_div.appendChild(about_div_button);
   content.appendChild(gallery);
-  gallery.appendChild(gallery_h2)
-  gallery.appendChild(gallery_img_1)
-  gallery.appendChild(gallery_img_2)
-  gallery.appendChild(gallery_img_3)
-  gallery.appendChild(gallery_img_4)
-  gallery.appendChild(gallery_img_5)
-  gallery.appendChild(gallery_img_6)
-  gallery.appendChild(gallery_img_7)
-  gallery.appendChild(gallery_img_8)
-  gallery.appendChild(gallery_img_9)
-  gallery.appendChild(gallery_img_10)
+  gallery.appendChild(gallery_h2);
+  gallery.appendChild(gallery_img_1);
+  gallery.appendChild(gallery_img_2);
+  gallery.appendChild(gallery_img_3);
+  gallery.appendChild(gallery_img_4);
+  gallery.appendChild(gallery_img_5);
+  gallery.appendChild(gallery_img_6);
+  gallery.appendChild(gallery_img_7);
+  gallery.appendChild(gallery_img_8);
+  gallery.appendChild(gallery_img_9);
+  gallery.appendChild(gallery_img_10);
 
   top.setAttribute('class', 'top');
+  top.setAttribute('id', 'top');
   header.setAttribute('class', 'hero');
   features.setAttribute('class', 'features');
+  features.setAttribute('id', 'features');
   feature1.setAttribute('class', 'feature');
   feature2.setAttribute('class', 'feature');
   feature3.setAttribute('class', 'feature');
@@ -142,11 +149,13 @@ const home = () => {
   feature4_span.setAttribute('class', 'icon');
   p2.setAttribute('class', 'price');
   p4.setAttribute('class', 'price');
-  div1.setAttribute('class', 'cta cta1')
-  div2.setAttribute('class', 'cta cta2')
+  div1.setAttribute('class', 'cta cta1');
+  div2.setAttribute('class', 'cta cta2');
   about.setAttribute('class', 'about');
-  about_div.setAttribute('class', 'about__details')
-  gallery.setAttribute('class', 'gallery')
-}
+  about.setAttribute('id', 'about');
+  about_div.setAttribute('class', 'about__details');
+  gallery.setAttribute('class', 'gallery');
+  gallery.setAttribute('id', 'gallery');
+};
 
 export default home;
