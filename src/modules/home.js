@@ -33,6 +33,18 @@ const home = () => {
   const p3 = document.createElement('p');
   const p4 = document.createElement('p');
   const p5 = document.createElement('p');
+  const gallery = document.createElement('section')
+  const gallery_h2 = document.createElement('h2')
+  const gallery_img_1 = document.createElement('img');
+  const gallery_img_2 = document.createElement('img');
+  const gallery_img_3 = document.createElement('img');
+  const gallery_img_4 = document.createElement('img');
+  const gallery_img_5 = document.createElement('img');
+  const gallery_img_6 = document.createElement('img');
+  const gallery_img_7 = document.createElement('img');
+  const gallery_img_8 = document.createElement('img');
+  const gallery_img_9 = document.createElement('img');
+  const gallery_img_10 = document.createElement('img');
   const content = document.getElementById('content');
 
   h1.textContent = "Terry's Taco Joint";
@@ -58,6 +70,17 @@ const home = () => {
   about_div_p1.textContent = "Slim Profile, easy to hold and loaded with cheese."
   about_div_p2.textContent = "This is the one you have been waiting for"
   about_div_button.textContent = "Learn More →"
+  gallery_h2.textContent = "Instant Grams"
+  gallery_img_1.src = "https://source.unsplash.com/random/201x201"
+  gallery_img_2.src = "https://source.unsplash.com/random/202x202"
+  gallery_img_3.src = "https://source.unsplash.com/random/203x203"
+  gallery_img_4.src = "https://source.unsplash.com/random/204x204"
+  gallery_img_5.src = "https://source.unsplash.com/random/205x205"
+  gallery_img_6.src = "https://source.unsplash.com/random/206x206"
+  gallery_img_7.src = "https://source.unsplash.com/random/207x207"
+  gallery_img_8.src = "https://source.unsplash.com/random/208x208"
+  gallery_img_9.src = "https://source.unsplash.com/random/209x209"
+  gallery_img_10.src = "https://source.unsplash.com/random/209x208"
 
   header.appendChild(h1);
   header.appendChild(p1);
@@ -93,6 +116,18 @@ const home = () => {
   about_div.appendChild(about_div_p1)
   about_div.appendChild(about_div_p2)
   about_div.appendChild(about_div_button)
+  content.appendChild(gallery);
+  gallery.appendChild(gallery_h2)
+  gallery.appendChild(gallery_img_1)
+  gallery.appendChild(gallery_img_2)
+  gallery.appendChild(gallery_img_3)
+  gallery.appendChild(gallery_img_4)
+  gallery.appendChild(gallery_img_5)
+  gallery.appendChild(gallery_img_6)
+  gallery.appendChild(gallery_img_7)
+  gallery.appendChild(gallery_img_8)
+  gallery.appendChild(gallery_img_9)
+  gallery.appendChild(gallery_img_10)
 
   top.setAttribute('class', 'top');
   header.setAttribute('class', 'hero');
@@ -111,6 +146,7 @@ const home = () => {
   div2.setAttribute('class', 'cta cta2')
   about.setAttribute('class', 'about');
   about_div.setAttribute('class', 'about__details')
+  gallery.setAttribute('class', 'gallery')
 }
 
 export default home;

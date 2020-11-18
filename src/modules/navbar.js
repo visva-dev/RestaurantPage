@@ -1,5 +1,4 @@
 const nav = () => {
-  console.log('This is a Restaurant navbar!');
   const nav = document.createElement('nav');
   const unorderedList = document.createElement('ul');
   const list = document.createElement('li');

@@ -1,10 +1,8 @@
 import './style.scss';
 import nav from './modules/navbar';
 import home from './modules/home';
-import menu from './modules/menu';
-import contacts from './modules/contact';
+import footer from './modules/footer';
 
 nav();
 home();
-menu();
-contacts();
+footer();
