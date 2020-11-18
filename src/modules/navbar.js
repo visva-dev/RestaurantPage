@@ -24,6 +24,8 @@ const nav = () => {
 
   content.appendChild(nav);
   nav.setAttribute('class', 'flex-nav');
+  list.setAttribute('id', 'home')
+  secondList.setAttribute('id', 'menu')
   thirdList.setAttribute('id', 'contact')
 }
 

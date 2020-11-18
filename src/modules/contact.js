@@ -1,5 +1,3 @@
-import footer from "./footer";
-
 const contact = () => {
   const container = document.getElementById('content');
   const childOne = document.getElementById('top');
