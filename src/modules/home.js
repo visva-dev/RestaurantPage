@@ -18,6 +18,13 @@ const home = () => {
   const feature4_span = document.createElement('span');
   const feature4_h3 = document.createElement('h3');
   const feature4_p = document.createElement('p');
+  const about = document.createElement('section');
+  const about_img = document.createElement('img');
+  const about_div = document.createElement('div');
+  const about_div_h2 = document.createElement('h2');
+  const about_div_p1 = document.createElement('p');
+  const about_div_p2 = document.createElement('p');
+  const about_div_button = document.createElement('button');
   const div1 = document.createElement('div');
   const div2 = document.createElement('div');
   const h1 = document.createElement('h1');
@@ -46,6 +53,11 @@ const home = () => {
   feature2_p.textContent = "adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
   feature3_p.textContent = "adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisicing elit, elit."
   feature4_p.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  about_img.src = './queso-taco.png'
+  about_div_h2.textContent = "Featured Taco"
+  about_div_p1.textContent = "Slim Profile, easy to hold and loaded with cheese."
+  about_div_p2.textContent = "This is the one you have been waiting for"
+  about_div_button.textContent = "Learn More →"
 
   header.appendChild(h1);
   header.appendChild(p1);
@@ -65,18 +77,22 @@ const home = () => {
   feature1.appendChild(feature1_span)
   feature1.appendChild(feature1_h3)
   feature1.appendChild(feature1_p)
-
   feature2.appendChild(feature2_span)
   feature2.appendChild(feature2_h3)
   feature2.appendChild(feature2_p)
-
   feature3.appendChild(feature3_span)
   feature3.appendChild(feature3_h3)
   feature3.appendChild(feature3_p)
-
   feature4.appendChild(feature4_span)
   feature4.appendChild(feature4_h3)
   feature4.appendChild(feature4_p)
+  content.appendChild(about);
+  about.appendChild(about_img)
+  about.appendChild(about_div)
+  about_div.appendChild(about_div_h2)
+  about_div.appendChild(about_div_p1)
+  about_div.appendChild(about_div_p2)
+  about_div.appendChild(about_div_button)
 
   top.setAttribute('class', 'top');
   header.setAttribute('class', 'hero');
@@ -93,6 +109,8 @@ const home = () => {
   p4.setAttribute('class', 'price');
   div1.setAttribute('class', 'cta cta1')
   div2.setAttribute('class', 'cta cta2')
+  about.setAttribute('class', 'about');
+  about_div.setAttribute('class', 'about__details')
 }
 
 export default home;
