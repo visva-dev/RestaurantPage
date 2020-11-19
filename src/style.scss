@@ -1,7 +1,183 @@
-$text: orange;
-$bg: rgb(130, 180, 137);
+:root {
+  --yellow: #59c281;
+  --black: #494747;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
-  color: $text;
-  background: $bg;
+  font-family: sans-serif;
+  margin: 0;
+  background-image: linear-gradient(260deg, #bb2d80 0%, #291792 100%);
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.tabs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.tabs__nav {
+  border: 1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.tabs__nav-btn {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #f5f5f5;
+  border: 0;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
+  flex: 3;
+}
+
+.tabs__nav-btn:last-child {
+  border-right: none;
+}
+
+.tabs__nav-btn:hover {
+  background-color: #ddd;
+}
+
+.tabs__nav-btn.active {
+  background-color: #5e3ddf;
+  border-right-color: #5e3ddf;
+  color: #fff;
+}
+
+.tabs__content {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.tabs__item {
+  display: none;
+}
+
+.tabs__item.active {
+  display: block;
+}
+
+.top {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'hero hero cta1'
+    'hero hero cta2';
+}
+
+.hero {
+  grid-area: hero;
+  min-height: 400px;
+  background: white url(./taco.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.hero > * {
+  background: var(--yellow);
+  padding: 5px;
+}
+
+.cta {
+  background: var(--yellow);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.cta p {
+  margin: 0;
+}
+
+.cta1 {
+  grid-area: cta1;
+}
+
+.cta2 {
+  grid-area: cta2;
+}
+
+.price {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+[aria-controls='menu-list'] {
+  display: none;
+}
+
+.box {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+
+/* Colours for each box */
+.box1 {
+  background: #1abc9c;
+}
+
+.box2 {
+  background: #3498db;
+}
+
+.box3 {
+  background: #9b59b7;
+  flex-grow: 5;
+}
+
+.box4 {
+  background: #34495e;
+  flex-basis: 100px;
+}
+
+.box5 {
+  background: #f1c40f;
+}
+
+.box6 {
+  background: #e67e22;
+}
+
+.box7 {
+  background: #e74c3c;
+}
+
+.box8 {
+  background: #bdc3c7;
+}
+
+.box9 {
+  background: #2ecc71;
+}
+
+.box10 {
+  background: #16a085;
 }
