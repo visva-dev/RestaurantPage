@@ -47,7 +47,7 @@ function home() {
   tabs.appendChild(tabs__content);
   tabs__content.appendChild(tabs__item);
   tabs__item.appendChild(tabs__item_p);
-  tabs__content.appendChild(top);
+  tabs__item.appendChild(top);
   top.appendChild(header);
   top.appendChild(div1);
   top.appendChild(div2);
