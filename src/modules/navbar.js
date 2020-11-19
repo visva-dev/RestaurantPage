@@ -1,4 +1,4 @@
-const nav = () => {
+function nav() {
   const nav = document.createElement('nav');
   const unorderedList = document.createElement('ul');
   const list = document.createElement('li');

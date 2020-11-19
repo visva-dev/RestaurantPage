@@ -1,4 +1,4 @@
-const contact = () => {
+function menu() {
   const container = document.getElementById('content');
   const childOne = document.getElementById('top');
   const childTwo = document.getElementById('features');
@@ -42,5 +42,5 @@ const contact = () => {
   let parentDiv = childFive.parentNode;
   parentDiv.insertBefore(menu, childFive);
   console.log('Hellooooo');
-};
-export default contact;
+}
+export default menu;

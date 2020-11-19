@@ -1,4 +1,5 @@
-const home = () => {
+function home() {
+  const content = document.getElementById('content');
   const top = document.createElement('div');
   const header = document.createElement('header');
   const features = document.createElement('section');
@@ -45,7 +46,6 @@ const home = () => {
   const gallery_img_8 = document.createElement('img');
   const gallery_img_9 = document.createElement('img');
   const gallery_img_10 = document.createElement('img');
-  const content = document.getElementById('content');
 
   h1.textContent = "Terry's Taco Joint";
   p1.textContent = 'Pretty Good Tacos!';

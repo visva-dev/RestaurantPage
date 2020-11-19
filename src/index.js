@@ -9,17 +9,15 @@ nav();
 home();
 footer();
 
-// document.getElementById('home').addEventListener('click', () => {
-//   home();
-// });
+document.getElementById('home').addEventListener('click', () => {
+  home();
+});
 
 document.getElementById('contact').addEventListener('click', () => {
-  console.log('Hellooooo');
   contact();
 });
 
 document.getElementById('menu').addEventListener('click', () => {
-  console.log('Hellooooo');
   menu();
 });
 
