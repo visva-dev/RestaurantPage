@@ -19,33 +19,17 @@ body {
   background-image: linear-gradient(260deg, #bb2d80 0%, #291792 100%);
 }
 
-a {
-  color: white;
-  font-weight: 100;
-  letter-spacing: 2px;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 20px 5px;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  transition: all 0.5s;
+p {
+  margin: 0 0 10px;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-#content {
+.tabs {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px;
 }
 
-/* Flex Box Starts Here! */
-
-/* Flex Container */
-.flex-nav ul {
+.tabs__nav {
   border: 1px solid black;
   list-style: none;
   margin: 0;
@@ -53,23 +37,41 @@ a:hover {
   display: flex;
 }
 
-/* Flex Item */
-.flex-nav li {
+.tabs__nav-btn {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #f5f5f5;
+  border: 0;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
   flex: 3;
 }
 
-.flex-nav .social {
-  flex: 1;
+.tabs__nav-btn:last-child {
+  border-right: none;
 }
 
-button {
-  background: #ffc600;
-  border: 0;
-  padding: 10px 20px;
+.tabs__nav-btn:hover {
+  background-color: #ddd;
 }
 
-img {
-  max-width: 100%;
+.tabs__nav-btn.active {
+  background-color: #5e3ddf;
+  border-right-color: #5e3ddf;
+  color: #fff;
+}
+
+.tabs__content {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.tabs__item {
+  display: none;
+}
+
+.tabs__item.active {
+  display: block;
 }
 
 .top {
@@ -78,232 +80,4 @@ img {
   grid-template-areas:
     'hero hero cta1'
     'hero hero cta2';
-}
-
-.hero {
-  grid-area: hero;
-  min-height: 400px;
-  background: white url(./taco.jpg);
-  background-size: cover;
-  background-position: bottom right;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-}
-
-.hero > * {
-  background: var(--yellow);
-  padding: 5px;
-}
-
-.cta {
-  background: var(--yellow);
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-}
-
-.cta p {
-  margin: 0;
-}
-
-.cta1 {
-  grid-area: cta1;
-}
-
-.cta2 {
-  grid-area: cta2;
-}
-
-.price {
-  font-size: 60px;
-  font-weight: 300;
-}
-
-.menu ul {
-  display: grid;
-  grid-gap: 10px;
-  padding: 0;
-  list-style: none;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-
-.menu a {
-  background: var(--yellow);
-  display: block;
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-  color: var(--black);
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-[aria-controls='menu-list'] {
-  display: none;
-}
-
-.features {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.feature {
-  background: white;
-  padding: 10px;
-  border: 1px solid white;
-  text-align: center;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-}
-
-.feature .icon {
-  font-size: 50px;
-}
-
-.feature p {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-/* About Section */
-
-.about {
-  background: white;
-  padding: 50px;
-  display: grid;
-  grid-template-columns: 500px 1fr;
-  align-items: center;
-  margin: 10px;
-}
-
-/* Gallery! */
-
-.gallery {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.gallery img {
-  width: 100%;
-}
-
-.gallery h2 {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-gap: 20px;
-  align-items: center;
-}
-
-.gallery h2::before,
-.gallery h2::after {
-  display: block;
-  content: '';
-  height: 10px;
-  background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
-}
-
-.gallery h2::after {
-  --direction: right;
-}
-
-footer {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin: 20px 0;
-  color: white;
-  font-weight: 100;
-}
-
-.details {
-  color: aliceblue;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.box {
-  color: white;
-  font-size: 50px;
-  text-align: center;
-  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  flex-basis: 250px;
-  flex-grow: 1;
-}
-
-/* Colours for each box */
-.box1 {
-  background: #1abc9c;
-}
-
-.box2 {
-  background: #3498db;
-}
-
-.box3 {
-  background: #9b59b6;
-  flex-grow: 5;
-}
-
-.box4 {
-  background: #34495e;
-  flex-basis: 100px;
-}
-
-.box5 {
-  background: #f1c40f;
-}
-
-.box6 {
-  background: #e67e22;
-}
-
-.box7 {
-  background: #e74c3c;
-}
-
-.box8 {
-  background: #bdc3c7;
-}
-
-.box9 {
-  background: #2ecc71;
-}
-
-.box10 {
-  background: #16a085;
-}
-
-/* We start writing out flexbox here. The above is just page setup */
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  border: 10px solid goldenrod;
-  height: 100vh;
-}
-
-@media all and (max-width: 1000px) {
-  .flex-nav ul {
-    flex-wrap: wrap;
-  }
-
-  .flex-nav li {
-    flex: 1 1 50%;
-  }
-
-  .flex-nav .social {
-    flex: 1 1 25%;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .flex-nav li {
-    flex-basis: 100%;
-  }
 }

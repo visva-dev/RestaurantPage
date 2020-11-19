@@ -1,28 +1,22 @@
-const contact = () => {
-  const container = document.getElementById('content');
-  const childOne = document.getElementById('top');
-  const childTwo = document.getElementById('features');
-  const childThree = document.getElementById('about');
-  const childFour = document.getElementById('gallery');
-  const childFive = document.getElementById('footer');
-  container.removeChild(childOne);
-  container.removeChild(childTwo);
-  container.removeChild(childThree);
-  container.removeChild(childFour);
+function contact() {
+  const tabs__nav = document.querySelector('.tabs__nav');
+  const tabs__content = document.querySelector('.tabs__content');
+  const tabs__nav_btn3 = document.createElement('button')
+  const tabs__item3 = document.createElement('div')
+  const tabs__item3_p = document.createElement('p')
 
-  const details = document.createElement('section');
-  const details_p = document.createElement('p');
-  const details_p2 = document.createElement('p');
+  tabs__nav_btn3.setAttribute('class', 'tabs__nav-btn')
+  tabs__nav_btn3.setAttribute('type', 'button')
+  tabs__nav_btn3.setAttribute('data-tab', '#tab_3')
+  tabs__nav_btn3.textContent = 'Contact';
 
-  details.setAttribute('class', 'details');
-  details_p.textContent = 'Hey! I hope you like this restourant!';
-  details_p2.textContent = 'You can reach us at - Good-Developer.com';
+  tabs__item3.setAttribute('class', 'tabs__item')
+  tabs__item3.setAttribute('id', 'tab_3')
+  tabs__item3_p.textContent = "Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).";
 
-  container.appendChild(details);
-  details.appendChild(details_p)
-  details.appendChild(details_p2)
-  let parentDiv = childFive.parentNode
-  parentDiv.insertBefore(details, childFive)
-  console.log('Hellooooo');
+
+  tabs__nav.appendChild(tabs__nav_btn3)
+  tabs__content.appendChild(tabs__item3)
+  tabs__item3.appendChild(tabs__item3_p)
 };
 export default contact;
