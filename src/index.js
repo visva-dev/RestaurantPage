@@ -10,8 +10,6 @@ contact();
 const tabsBtn = document.querySelectorAll('.tabs__nav-btn');
 const tabsItems = document.querySelectorAll('.tabs__item');
 
-tabsBtn.forEach(onTabClick);
-
 function onTabClick(item) {
   item.addEventListener('click', () => {
     const currentBtn = item;
@@ -32,5 +30,5 @@ function onTabClick(item) {
     }
   });
 }
-
+tabsBtn.forEach(onTabClick);
 document.querySelector('.tabs__nav-btn').click();
